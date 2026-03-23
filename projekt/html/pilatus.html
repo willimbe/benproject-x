@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+     <!--Titel-->
+    <title>Pilatus</title>
+    <!--Favicon-->
+    <link rel="icon" href="/images/mountain_1757469.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- W3CSS Framework -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css" />
+  </head>
+  <body>
+    <!-- Navigation im Bild oben rechts -->
+    <header class="header">
+      <nav class="nav">
+        <a href="/projekt/index.html">Home</a>
+        <a href="/projekt/html/dufourspitze.html">Dufourspitze</a>
+        <a href="/projekt/html/pilatus.html">Pilatus</a>
+        <a href="/projekt/html/matterhorn.html">Matterhorn</a>
+      </nav>
+        <!-- Grosser Titel über dem Bild -->
+  <h1 class="hero-title_small">Pilatus</h1>
+    </header>
+
+  <!--Box mit Bilder-->
+    <main class=" w3-padding-16">
+      <div class="w3-row column-content">
+        <!-- Linke Spalte -->
+        <div class="w3-col s12 m5 l5 custom-col">
+         
+          <img src="../media/lake-lucerne-pilatus.avif" alt="Pilatus-lake" class="picture" />
+        </div>
+
+        <!-- Mittlere  Spalte -->
+        <div class="w3-col s12 m2 l2 custom-col">
+       
+          <img src="../media/pilatus_hoch.jpg" alt="Pilatus-small" class="picture" />
+        </div>
+
+        <!-- Rechte Spalte ( -->
+        <div class="w3-col s12 m5 l5 custom-col">
+        
+          <img src="../media/pilatus_bahn.jpg" alt="Pilatus-bahn" class="picture" />
+        </div>
+        
+      </div>
+   
+      <!-- Button zum Öffnen des Modals -->
+    <div class="w3-container w3-center w3-margin-top">
+      <button onclick="document.getElementById('pilatusModal').style.display='block'" class="w3-button w3-blue w3-round-large">
+        Mehr über Pilatus erfahren
+      </button>
+    </div>
+
+    <!-- Modal Fenster -->
+    <div id="pilatusModal" class="w3-modal" onclick="this.style.display='none'">
+      <div
+        class="w3-modal-content w3-card-4 w3-animate-top"
+        style="max-width:600px"
+        onclick="event.stopPropagation()"
+      >
+        <header class="w3-container w3-teal">
+          <span
+            onclick="document.getElementById('pilatusModal').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>Info zum Pilatus</h2>
+        </header>
+    <!-- Animierter Text im Modal -->
+      <div class="w3-container">
+  <ul class="w3-ul">
+    <li class="w3-animate-opacity"><strong>Höhe:</strong> 2'128 m ü. M.</li>
+    <li class="w3-animate-fading"><strong>Lage:</strong> Nähe Luzern, Zentralschweiz</li>
+    <li class="w3-animate-bottom"><strong>Gebirge:</strong> Emmental-Alpen</li>
+    <li class="w3-animate-top"><strong>Koordinaten:</strong> 46°59′12″ N, 8°18′05″ O</li>
+    
+
+    <li class="w3-animate-opacity"><strong>Besonderheiten:</strong>
+      <ul>
+        <li>Bekannt für die steilste Zahnradbahn Europas</li>
+        <li>Beliebtes Ausflugsziel mit Panoramablick auf die Zentralschweiz und die Alpen</li>
+        <li>Wanderwege und Aussichtsplattformen</li>
+      </ul>
+    </li>
+
+    <li class="w3-animate-fading"><strong>Zustieg:</strong> Seilbahn, Zahnradbahn oder Wanderwege</li>
+    <li class="w3-animate-bottom"><strong>Schwierigkeit:</strong> Leicht bis mittel (je nach Weg), familienfreundlich
+
+</li>
+  </ul>
+</div>
+        <footer class="w3-container w3-teal">
+          <p>© 2025 Pilatus Bergbahn AG</p>
+        </footer>
+      </div>
+    </div>
+    </main>
+
+    
+  <!-- Footer -->
+<footer class="w3-container  w3-margin-top footer">
+  <img src="/projekt/media/Berge-black.png" alt="Berge-dark" class="footer-image" />
+</footer>
+
+  </body>
+</html>
